@@ -16,7 +16,7 @@ color: red;
   color: #035f0b;
 }
 .input-error{
-  box-shadow: 0 0 5px red;
+  box-shadow: 0 0 5px;
 }
 #complete-header{
   display:flex;
@@ -178,12 +178,12 @@ align-items: center;}
 
 #gallery
 {
-  display: table;
-
+flex-direction: column;
+flex-wrap:wrap
 
 }#gallery> img{
   width:50%;
-  display: inline-block;
+  
 }
   /* media query for larger devices */
   @media screen and (min-width: 1024px) 
