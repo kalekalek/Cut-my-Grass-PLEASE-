@@ -1,8 +1,11 @@
+#gallery{
+  display:table-row;
+  flex-direction: row;
+}
 .form {
   display: block;
   position: relative;
   bottom: 0;
-  right: 15px;
   border: 3px solid #035f0b;
   z-index: 9;
 }
@@ -69,9 +72,14 @@ text-size-adjust:  17px;
   right: 0px;
 }
 
+#quote{
+  text-decoration-color: lawngreen;
+  color: rgb(3, 73, 12);
+  font-size: 18.72px;
+}
 .Home {background-color: red;}
 .Contact {background-color: blue;}
-.Services {background-color: orange;}
+.Services {background-color: rgb(107, 8, 116);}
 
 .p{
   display: inline-block;
@@ -86,7 +94,7 @@ input[type=text] {
   margin: 8px 0;
   box-sizing: border-box;
 }
-.program{
+#program{
   padding: 20px;
     text-align: center;
     background: rgb(2, 66, 8);
@@ -149,9 +157,17 @@ input[type=text] {
  {
 display: flex;
 flex-flow: row wrap;
-align-items: center;
+align-items: center;}
 
- }  
+#gallery
+{
+flex-direction: row;
+flex-wrap:wrap
+
+}#gallery> img{
+  width:50%;
+  display: inline-block;
+}
   /* media query for larger devices */
   @media screen and (min-width: 1024px) 
        {
@@ -172,3 +188,12 @@ align-items: center;
 }
 
        }
+       #gallery
+{
+  
+flex-direction:column;
+flex-wrap:wrap-reverse;
+
+}#gallery> img{
+  width:25%
+}
