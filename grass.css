@@ -71,11 +71,17 @@ text-size-adjust:  17px;
   box-sizing: border-box;
   right: 0px;
 }
+#button{
+  color: #035f0b;
+}
 
-#quote{
+  
+
+#quote, #para{
   text-decoration-color: lawngreen;
   color: rgb(3, 73, 12);
   font-size: 18.72px;
+  text-align: center;
 }
 .Home {background-color: red;}
 .Contact {background-color: blue;}

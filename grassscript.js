@@ -1,15 +1,3 @@
-function myFunction(x) {
-  if (x.matches) { // If media query matches
-    document.body.style.display = "box";
-  } else {
-    document.body.style.display = "grid";
-  }
-}
-
-var x = window.matchMedia( "(min-width: 600px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
-
 
 
 function openPage(pageName, elmnt, color) {
@@ -43,7 +31,4 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
-
-  
-
 
