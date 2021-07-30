@@ -1,9 +1,9 @@
 .form {
-  display: none;
-  position: fixed;
+  display: block;
+  position: relative;
   bottom: 0;
   right: 15px;
-  border: 3px solid #f1f1f1;
+  border: 3px solid #035f0b;
   z-index: 9;
 }
 #complete-header{
@@ -142,7 +142,7 @@ input[type=text] {
 #complete-header
 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
    }
    }
  #form
@@ -157,8 +157,9 @@ align-items: center;
        {
 .tablink{
   display: flex;
-  display:row ;
+  display:column ;
   width: 100%;
+  height: 50%;
 }
 #menu{
   display: flex;
