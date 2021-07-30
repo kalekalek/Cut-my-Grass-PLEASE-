@@ -9,6 +9,15 @@
   border: 3px solid #035f0b;
   z-index: 9;
 }
+.form-error{
+color: red;
+}
+.form-success{
+  color: #035f0b;
+}
+.input-error{
+  box-shadow: 0 0 5px red;
+}
 #complete-header{
   display:flex;
   flex-direction:column;
@@ -169,8 +178,8 @@ align-items: center;}
 
 #gallery
 {
-flex-direction: row;
-flex-wrap:wrap
+  display: table;
+
 
 }#gallery> img{
   width:50%;

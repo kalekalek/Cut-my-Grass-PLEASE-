@@ -41,7 +41,7 @@ return false;
 
 }
 }
-let btn = document.getElementById('btn');
+let button = document.getElementById('button');
 let output = document.getElementById('output');
 let quotes =[
 '"Cutting Grass is cool."- Cut My Grass Please!! ',
@@ -50,7 +50,7 @@ let quotes =[
 '"What is your favorite type of grass?" - Cut My Grass PLEASE!!!',
 '"What did the pushmower say to the riding mower? - Cut My Grass PLEASE!!!',
 ];
-btn.addEventListener('click', function()
+button.addEventListener('click', function()
 {
 
   var randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
