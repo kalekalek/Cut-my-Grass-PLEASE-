@@ -6,8 +6,9 @@
        <meta name= "viewport" content= "width=device-width" , initial-scale =1.0 >
       
       <link rel="stylesheet" href="grass.css">
-      <script src='grassscript.js'>grassscript.js</script>
+      <script src='grassscript.js'></script>
     </head>
+    <div id=complete-header>
      <div id='top-header'>
        <div id='header-image'>
        <img src='image0.jpeg' style= width:100%;>
@@ -22,6 +23,7 @@
       <button class="tablink" onclick="openPage('Services', this, 'blue')">Services</button>
       <button class="tablink" onclick="openPage('Contact us', this, 'orange')">Contact us</button>
     </div>
+  </div>
 
       <div id="Home" class="tabcontent">
         <h3>Home</h3>
@@ -41,11 +43,19 @@
         </p>
       </div>
 
-      
-       
+      <footer>
+      <div class="form" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          
+          <h3>Get Services</h3>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+          <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
       
 
-<footer>
+
   <p>Send us an email, Please include which service you would like, Also  your contact info.</p>
       <form action="/action_page.php" target="_self">
        <a href = "mailto:Mrgabaker5@gmail.com">Send email</a>
