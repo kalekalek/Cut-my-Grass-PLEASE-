@@ -22,7 +22,7 @@ function openPage(pageName, elmnt, color) {
 }
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen");
 
 function openForm() {
   document.getElementById("myForm").style.display = "block";
@@ -32,3 +32,27 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 
+function validateForm() {
+var x = document.forms["myForm"]
+[""].value;
+if (x == "") {
+alert("Service must be chosen");
+return false;
+
+}
+}
+let btn = document.getElementById('btn');
+let output = document.getElementById('output');
+let quotes =[
+'"Cutting Grass is cool."- Cut My Grass Please!! ',
+'"Where did you learn those skills!!" - Cut My Grass PLEASE!!!',
+'"Why did the lawnmower cross the road? To" - Cut My Grass PLEASE!!!',
+'"What is your favorite type of grass?" - Cut My Grass PLEASE!!!',
+'"What did the pushmower say to the riding mower? - Cut My Grass PLEASE!!!',
+];
+btn.addEventListener('click', function()
+{
+
+  var randomQuote = quotes[Math.floor(Math.random() * quotes.length)]
+  output.innerHTML = randomQuote;
+})

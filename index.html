@@ -7,6 +7,23 @@
       
       <link rel="stylesheet" href="grass.css">
       <script src='grassscript.js'></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+      <script>
+$(document).ready(function() {
+  $("form").submit(function(event) {
+       
+       var name = $("#mail-name").val();
+       var date = $("#mail-date").val();
+       var submit = $("#mail-submit").val();
+       $(".form-message").load("mail.php", {
+         name: name,
+         date: date,
+         submit: submit
+
+       });
+  });
+});    
+      </script>
     </head>
     <div id=complete-header>
      <div id='top-header'>
@@ -46,16 +63,23 @@
 
    <footer>
 
-        <div id="quote">
-      <a>Get a Quote</a>
-      <div id="quotedisplay">
-       <div id=button>
-      <button onclick="newQuote()">New Quote</button>
-    </div>
-    </div>
-    </div>
+<div id="pick">
+<form action="mail.php" method="POST">
+  <input id="mail-name" type="text" name="name" placeholder="Fullname">
+   <br>
+  <input id="mail-date" type="date" name="date" placeholder="Date">
+   <br>
+  <button id="mail-submit" type="submit" name="submit" >Send Info</button>
+  <p class="form-message"></p>
+</form>
+<br>
+        
+      <div id="output">Get a Quote</div>
+      <button id="button" >New Quote</button>
+    
+    
 
-      <!--Picture Gallery-->
+<!--Picture Gallery-->
       <div id="gallery">
 <img src="http://placeimg.com/400/400/nature/grayscale" alt="nature"></src>
 <img src="http://placeimg.com/400/400/nature" alt="nature"></src>
